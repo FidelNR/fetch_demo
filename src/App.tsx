@@ -3,6 +3,8 @@ import './App.css'
 import SWR from './components/SWR.tsx'
 import ReactQuery from './components/ReactQuery.tsx';
 import { QueryClient, QueryClientProvider } from 'react-query';
+import React from 'react';
+import PropTypes from 'prop-types';
 
 const queryClient = new QueryClient();
 
@@ -49,4 +51,19 @@ function App() {
   )
 }
 
-export default App
+
+
+/*interface AppProps {
+  name: string;
+}
+
+const App: React.FC<AppProps> = ({ name }) => {
+  return (
+    <div>
+      <h1>Hello, {name}!</h1>
+      <button>Click me</button>
+    </div>
+  );
+};*/
+
+export default App;
