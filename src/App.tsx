@@ -2,9 +2,8 @@ import { useEffect, useState } from 'react'
 import './App.css'
 import SWR from './components/SWR.tsx'
 import ReactQuery from './components/ReactQuery.tsx';
+import Axios from './components/Axios.tsx';
 import { QueryClient, QueryClientProvider } from 'react-query';
-import React from 'react';
-import PropTypes from 'prop-types';
 
 const queryClient = new QueryClient();
 
@@ -46,6 +45,7 @@ function App() {
     )}
     <SWR/>
     <ReactQuery/>
+    <Axios/>
     </>
     </QueryClientProvider>
   )
